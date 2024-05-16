@@ -1,0 +1,376 @@
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Bebas Neue", sans-serif;
+    color: #a71616;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    width: 0px;               
+  }
+.main{
+    background: #232323;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.ibb.co/FhfBXMD/static.jpg');
+    mix-blend-mode:overlay;
+    z-index: -1 ;
+}
+.bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #d84747;
+    z-index: -2;
+}
+.logo img{
+    height: 60px;
+    mix-blend-mode:overlay;
+}
+.logo{
+    position: absolute;
+    top: 120px;
+    left: 2vw;
+}
+.text1 h1{
+    position: absolute;
+    right: 10px;
+    font-size: 100px;
+    letter-spacing: -4px;
+}
+.text2 h1{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    font-size: 100px;
+    letter-spacing: -4px;
+}
+.text3 h1{
+    position: absolute;
+    left: 10px;
+    bottom: 300px;
+    font-size: 150px;
+    letter-spacing: -4px;
+}
+.text4 h1{
+    position: absolute;
+    left: 10px;
+    bottom: 150px;
+    font-size: 170px;
+    letter-spacing: -4px;
+}
+.text5 h1{
+    position: absolute;
+    left: 10px;
+    bottom: -27px;
+    font-size: 170px;
+    letter-spacing: -4px;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+}
+#curve{
+    fill:transparent;
+}
+.text{
+    transform-origin: 42% 50%;
+    fill: #dadada;
+    font-size: 20px;
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+    form{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.img img{
+    height: 600px;
+    border-radius: 10px;
+}
+.img{
+    position:absolute;
+    transform:translate(-169px);
+    left: 50%;
+    bottom: 25px;
+}
+.behind{
+    left: 35%;
+    bottom: 70px;
+    position: absolute;
+    height: 400px;
+    width: 30vw;
+    background:#4a4a4a96;
+    mix-blend-mode:color-burn
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+}
+.nav{
+    left: 10vw;
+    position: absolute;
+    top: 105vh;
+    background: #0000003d;
+    height: 70px;
+    width: 80%;
+    border-radius: 10px;
+}
+.nav .logo{
+    top: 5px;
+}
+.nav .head1 a{
+    font-size: 35px;
+    color: #c5c5c5;
+    position: absolute;
+    top: 20px;
+    right: 110px;
+    transition: all 0.7s;
+    text-decoration: none;
+    font-family: "kajiro";
+    transform: translate(50% ,-12.5%);
+    letter-spacing: 1px;
+}
+.nav .head2 a{
+    font-size:  35px;
+    color: #c5c5c5;
+    margin-top: 20px;
+    position: absolute;
+    right: 45px;
+    transition: all 0.7s;
+    text-decoration: none;
+    font-family: "kajiro";
+    transform: translate(50% ,-12.5%);
+    letter-spacing: 1px;
+}
+.nav a:hover{
+    font-size: 50px;
+}
+.front{
+    overflow: hidden;
+    border-radius: 10px;
+    left: 2.5vw;
+    top: 2.5vh;
+    position: relative;
+    height: 95vh;
+    width: 95vw;
+}
+.front .bg::before{
+    top: 100vh;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.ibb.co/FhfBXMD/static.jpg');
+    mix-blend-mode:overlay;
+    z-index: -1 ;
+}
+.front .bg::after{
+    top: 100vh;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #d84747;
+    z-index: -2;
+}
+.line1 h1{
+    font-size: 30px;
+    position: absolute;
+    top:18vh;
+    left: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line2 h1{
+    font-size: 30px;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line3 h1{
+    font-size: 30px;
+    position: absolute;
+    top: 33vh;
+    left: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line4 h1{
+    font-size: 30px;
+    position: absolute;
+    top: 39vh;
+    left: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line5 h1{
+    font-size: 30px;
+    position: absolute;
+    top:53vh;
+    right: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line6 h1{
+    font-size: 30px;
+    position: absolute;
+    top:60vh;
+    right: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.line7 h1{
+    font-size: 30px;
+    position: absolute;
+    top:67vh;
+    right: 15vw;
+    font-family: PP mori;
+    letter-spacing: -2px;
+    color: #dadada;
+}
+.devide{
+    top:48vh;
+    height: 10px;
+    width: 100%;
+    background: #232323;
+    position: absolute;
+}
+.box1{
+    transform: translate(-50%);
+    position:absolute;
+    top: 17vh;
+    left: 50%;
+    height: 29.0vh;
+    width: 300px;
+    background: #535353;
+    mix-blend-mode:overlay;
+    border-radius: 10px;
+}
+.page2 .circle{
+    left: 10vw;
+    transform: translate(-50%,70%);
+}
+.box2{
+    transform: translate(-50%);
+    position:absolute;
+    top: 51vh;
+    left: 50%;
+    height: 30vh;
+    width: 300px;
+    background: #535353;
+    mix-blend-mode:overlay;
+    border-radius: 10px;
+}
+.arrow a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #dadada;
+    position: absolute;
+    left: 49%;
+    top: 85vh;
+}
+.img2 img{
+    position: absolute;
+    height: 250px;
+    left: 37vw;
+    top: 12vh;
+}
+.page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.page3 .bg::after{
+    top: 100vh;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 101vh;
+    background: #232323;
+    z-index: -2;
+}
+.elem{
+    top:100px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem img{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 5%;
+}
+.text-div{
+    height: 160px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    letter-spacing: -9px;
+    font-size: 110px;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
